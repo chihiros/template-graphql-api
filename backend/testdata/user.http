@@ -1,0 +1,26 @@
+### ユーザー一覧の取得
+GET http://localhost:8686/api/users
+
+### ユーザー一覧の取得
+GET http://localhost:8686/api/users/query?id=1
+
+#### ユーザーの追加
+POST http://localhost:8686/api/users
+Context-Type: application/json
+
+{
+    "username": "User2",
+    "age": 20
+}
+
+#### ユーザーの追加・更新
+PUT http://localhost:8686/api/users
+Context-Type: application/json
+
+{
+    "username": "User2",
+    "age": 20
+}
+
+### ユーザー一覧の取得
+DELETE http://localhost:8686/api/users?id=1
